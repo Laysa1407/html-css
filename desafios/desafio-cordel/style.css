@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Poppins', sans-serif;
+    --fonte3:'Caveat', cursive;
+    --fonte4: 'Glass Antiqua', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -16,16 +28,20 @@ header{
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vh;
 }
 header >p{
     padding-bottom: 50px;
 }
 
 section{
+    font-family: var(--fonte4);
+    font-weight: bolder;
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-size: 4vh;
 }
 
 .normal{
@@ -35,13 +51,15 @@ section{
     
 }
 .imagem{
+   
     background-color: rgb(56, 55, 53);
     color: white;
 
 }
 .imagem>p{
     background-color: rgba(0, 0, 0, 0.119);
-    width: 400px;
+    display:inline-block;
+    padding: 10px;
 }
 
 a{
